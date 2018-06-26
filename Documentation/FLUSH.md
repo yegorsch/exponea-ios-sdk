@@ -3,12 +3,12 @@
 All tracked events and track customer properties are stored in the internal database in the Exponea SDK. By default, Exponea SDK automatically takes care of flushing events to the Exponea API. This feature can be turned off setting the property FlushMode to MANUAL. Please be careful with turning automatic flushing off because if you turn it off, you need to manually call Exponea.shared.flushData() to flush the tracked events manually every time there is something to flush.
 
 
-```
+```swift
 public func flushData()
 ```
 
 #### 💻 Usage
-```
+```swift
 Exponea.shared.flushData()
 ```
 
@@ -21,7 +21,7 @@ It's possible to change the period to flush the events recorded into the databas
 
 Flushing mode that is used to specify how often or if data is automatically flushed.
 
-```
+```swift
 public enum FlushingMode {
     /// Manual flushing mode disables any automatic upload and it's your responsibility to flush data.
     case manual

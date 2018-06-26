@@ -15,7 +15,7 @@ Purchase events contain all basic information about the device (OS, OS version, 
 
 If you use in your project some virtual payments (e.g. purchase with in-game gold, coins, ...), now you can track them with simple call `trackVirtualPayment`.
 
-```
+```swift
 fun trackVirtualPayment(
         customerId: CustomerIds,
         item: PurchasedItem
@@ -24,7 +24,7 @@ fun trackVirtualPayment(
 
 #### 💻 Usage
 
-```
+```swift
 // Preparing the data.
 val customerIds = CustomerIds(registered = "john@doe.com")
 val item = PurchasedItem(
@@ -53,7 +53,7 @@ Exponea.trackVirtualPayment(
 
 If you use virtual payments (e.g. purchase with in-game gold, coins, ...) in your project, you can track them with a call to trackPayment method.
 
-```
+```swift
 fun trackPayment(
         customerIds: CustomerIds,
         timestamp: Long = Date().time,
@@ -63,7 +63,7 @@ fun trackPayment(
 
 #### 💻 Usage
 
-```
+```swift
 // Preparing the data.
 val customerIds = CustomerIds(registered = "john@doe.com")
 val item = PurchasedItem(

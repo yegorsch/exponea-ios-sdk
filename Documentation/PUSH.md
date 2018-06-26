@@ -30,7 +30,7 @@ In case you decide to deactivate the automatic push notification, you can still 
 
 #### Track Push Token
 
-```
+```swift
 // Tracks the push notification token to Exponea API with struct.
 public func trackPushToken(_ token: Data)
 /// Tracks the push notification token to Exponea API with string.
@@ -39,19 +39,19 @@ public func trackPushToken(_ token: String)
 
 #### 💻 Usage
 
-```
+```swift
 Exponea.shared.trackPushToken("my_push_token")
 ```
 
 #### Track Push Notification Opened
 
-```
+```swift
 public func trackPushOpened(with userInfo: [AnyHashable: Any])
 ```
 
 #### 💻 Usage
 
-```
+```swift
 // Prepare Data
 let userInfo = ["action_type": "notification",
                 "status": "clicked"]

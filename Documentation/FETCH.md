@@ -7,7 +7,7 @@ All the responses will be available in a completion handler closure.
 
 Get items recommended for a customer.
 
-```
+```swift
 public func fetchRecommendation(with request: RecommendationRequest,
                                 completion: @escaping (Result<RecommendationResponse>) -> Void)
 )
@@ -15,7 +15,7 @@ public func fetchRecommendation(with request: RecommendationRequest,
 
 #### 💻 Usage
 
-```
+```swift
 // Preparing the data.
 let recommendation = CustomerRecommendation(
         type = "recommendation",
@@ -41,14 +41,14 @@ Exponea.shared.fetchRecommendation(with: recommendation) { (result) in
 It's possible to get all the customer attributes you have sent to the Exponea APP through the following method.
 
 
-```
+```swift
 public func fetchAttributes(with request: AttributesDescription,
                             completion: @escaping (Result<AttributesListDescription>) -> Void)
 ```
 
 #### 💻 Usage
 
-```
+```swift
 // Preparing the data.
 let attributes = AttributesDescription(
         key = "type",
@@ -67,14 +67,14 @@ Exponea.shared.fetchAttributes(with: attributes) { (result) in
 
 Export all the events for a specific customer.
 
-```
+```swift
 public func fetchEvents(with request: EventsRequest, 
                         completion: @escaping (Result<EventsResponse>) -> Void)
 ```
 
 #### 💻 Usage
 
-```
+```swift
 // Preparing the data.
 let events = EventsRequest(
         eventTypes = ["session_start", "payment"],

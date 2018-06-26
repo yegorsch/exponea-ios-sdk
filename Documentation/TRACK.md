@@ -14,7 +14,7 @@ So the possible events for tracking will be: ‘search’, ‘product view’, �
 ## 🔍 Track Event
 In the SDK you can track an event using the following accessor:
 
-```
+```swift
 public func trackEvent(properties: [String: JSONConvertible], 
                        timestamp: Double?, 
                        eventType: String?)
@@ -23,7 +23,7 @@ public func trackEvent(properties: [String: JSONConvertible],
 
 #### 💻 Usage
 
-```
+```swift
 // Preparing the data.
 let properties = ["my_property_1" : "my property 1 value",
                   "info" : "test from exponea SDK sample app",
@@ -39,7 +39,7 @@ Exponea.shared.trackEvent(properties: properties,
 
 Save or update your customer data in the Exponea APP through this method.
 
-```
+```swift
 public func identifyCustomer(customerId: String?,
                              properties: [String: JSONConvertible],
                              timestamp: Double?)
@@ -47,7 +47,7 @@ public func identifyCustomer(customerId: String?,
 
 #### 💻 Usage
 
-```
+```swift
 Exponea.shared.identifyCustomer(customerId: "test@test.com",
                                 properties: ["custom_property" : "Some Property Value", "first_name" : "test"],
                                 timestamp: nil)
@@ -65,24 +65,24 @@ There are also two methods available for you to track the sessions manually.
 
 ### Track Session Start
 
-```
+```swift
 trackSessionStart()
 ```
 
 #### 💻 Usage
 
-```
+```swift
 Exponea.shared.trackSessionStart()
 ```
 
 ### Track Session End
 
-```
+```swift
 trackSessionEnd()
 ```
 
 #### 💻 Usage
 
-```
+```swift
 Exponea.shared.trackSessionEnd()
 ```
